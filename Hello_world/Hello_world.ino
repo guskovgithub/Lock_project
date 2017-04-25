@@ -21,7 +21,8 @@ Keypad customKeypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 void setup()
 {
   lcd.init();                            // Инициализация lcd             
-  lcd.backlight();                       // Включаем подсветку
+  lcd.backlight(); 
+  lcd.blink();// Включаем подсветку
   // Курсор находится в начале 1 строки
   lcd.print("8ka.mipt.ru!"); 
 
