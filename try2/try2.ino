@@ -48,7 +48,14 @@ void start_screen()
 }
 
 void analyze()
-{
+{ 
+  //формируем строку секрета согласно протоколу
+  char getstr[256] = "\0";
+  strcat(getstr, login); 
+  strcat(getstr, "wash8ka2014AS!");
+  strcat(getstr, password);
+  strcat(getstr, lock_id);
+  strcat(getstr, "CHECKPASS");
   
 }
 
