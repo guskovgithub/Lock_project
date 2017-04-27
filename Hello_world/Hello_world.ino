@@ -22,9 +22,9 @@ void setup()
 {
   lcd.init();                            // Инициализация lcd             
   lcd.backlight(); 
-  lcd.blink();// Включаем подсветку
+
   // Курсор находится в начале 1 строки
-  lcd.print("8ka.mipt.ru!"); 
+  lcd.print("Sveta kek"); 
 
 }
 
