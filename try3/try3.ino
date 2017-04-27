@@ -66,7 +66,7 @@ void analyze()
   char* md5str = MD5::make_digest(hash, 16);
   getstr[0] = '\0'; 
   // формируем строку запроса
-  sprintf(getstr, "GET /checkPin.php?login=", login,  "&action=cHEcKPASS&pass=", password, "&secret=",md5str,"&lock_id=",lock_id,"\n");
+  sprintf(getstr, "GET /checkPin.php?login=", login, "&action=cHEcKPASS&pass=", password, "&secret=",md5str,"&lock_id=",lock_id,"\n");
   if (client.connect(server, 80))
     { 
       //пытаемся подключиться к серверу
